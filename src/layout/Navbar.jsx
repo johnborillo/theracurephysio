@@ -6,8 +6,8 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
 const links = [
 	{ name: 'HOME', href: '/' },
-	{ name: 'ABOUT', href: '/about' },
 	{ name: 'SERVICES', href: '/services' },
+	{ name: 'ABOUT', href: '/about' },
 	{ name: 'CONTACT', href: '/contact' },
 ]
 
@@ -17,7 +17,7 @@ function Navbar (){
 	return (
 		<Flex as='nav' align='center' justify='space-between' w='full' p={4} backgroundColor='#F6F2EE' >
 			<Flex direction='column'>
-				<Link ml={['2em', '2em', '4em']} mr={['2em', '2em', '4em']} href='/' as='span' style={{textDecoration: 'none'}}>
+				<Link ml={['2em', '2em', '4em']} mr={['2em', '2em', '4em']} href='/' style={{textDecoration: 'none'}}>
 					<Heading size='lg' color=''>theracurephysio</Heading>
 				</Link>
 				<Box
@@ -27,7 +27,7 @@ function Navbar (){
 					<Flex direction='column' alignItems={isOpen ? 'left' : 'center'} justify='center' mt={4} ml={isOpen ? '2em' : null}>
 						{links.map((link) => (
 							<Link href={link.href} key={link.name} p={2} style={{textDecoration: 'none'}}>
-								<Text color='' _hover={{color: '#808080'}}>{link.name}</Text>
+								<Text _hover={{color: '#808080'}}>{link.name}</Text>
 							</Link>
 						))}
 						<Link href='https://theracurephysio.janeapp.com/' style={{textDecoration: 'none'}}>

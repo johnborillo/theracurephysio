@@ -26,28 +26,51 @@ function HomePage () {
 					<Flex direction={['column', 'column']} gap={7} ml={['2em', '2em', '4em']} mr={['2em', '2em', '4em']}>
 						<Heading as="h1" size="2xl">Explore Our Offerings</Heading>
 						<Text fontSize='xl'>Discover tailored solutions for your needs. From rehabilitation to performance enhancement, our services are designed to empower you.</Text>
-						<SimpleGrid columns={[1, 1, 3]} spacing={4}>
-							<Flex direction='column' justifyContent='space-between' ml={3} mr={3}>
-								<Image src='/images/img3.jpeg' alt='Initial Assessment & Treatment' objectFit='cover' boxSize={['100%', 350]} />
-								<Heading as='h4' size='md' mt={2}>Initial Assessment & Treatment</Heading>
-								<Text fontSize='lg' mt={2}>Begin your journey with a thorough evaluation and personalized treatment plan tailored to your needs.</Text>
-							</Flex>
-							<Flex direction='column' justify='space-between' ml={3} mr={3}>
-								<Image src='/images/img6.jpeg' alt='Reassessment Assessment & Treatment' objectFit='cover' boxSize={['100%', 350]} />
-								<Heading as='h4' size='md' mt={2}>Reassessment Assessment & Treatment</Heading>
-								<Text fontSize='lg' mt={2}>Stay on track with ongoing evaluations and targeted therapies to optimize your progress.</Text>
-							</Flex>
-							<Flex direction='column' justify='space-between' ml={3} mr={3}>
-								<Image src='/images/img7.jpeg' alt='Subsequent Visit' objectFit='cover' boxSize={['100%', 350]} />
-								<Heading as='h4' size='md' mt={2}>Subsequent Visit</Heading>
-								<Text fontSize='lg' mt={2}>Continue recovery with follow-up sessions focused on refining your treatment and maximizing your results.</Text>
-							</Flex>
-						</SimpleGrid>
+						<Box>
+							<Heading mb={2}>Physiotherapy</Heading>
+							<SimpleGrid columns={[1, 1, 3]} spacing={4}>
+								<Flex direction='column' justifyContent='space-between' ml={3} mr={3}>
+									<Image src='/images/img3.jpeg' alt='Initial Assessment & Treatment' objectFit='cover' boxSize={['100%', 350]} />
+									<Heading as='h4' size='md' mt={2}>Initial Assessment & Treatment</Heading>
+									<Text fontSize='lg' mt={2} mb={[4, 4]}>Begin your journey with a thorough evaluation and personalized treatment plan tailored to your needs.</Text>
+								</Flex>
+								<Flex direction='column' justify='space-between' ml={3} mr={3}>
+									<Image src='/images/img6.jpeg' alt='Reassessment Assessment & Treatment' objectFit='cover' boxSize={['100%', 350]} />
+									<Heading as='h4' size='md' mt={2}>Reassessment & Treatment</Heading>
+									<Text fontSize='lg' mt={2} mb={[4, 4]}>Stay on track with ongoing evaluations and targeted therapies to optimize your progress.</Text>
+								</Flex>
+								<Flex direction='column' justify='space-between' ml={3} mr={3}>
+									<Image src='/images/img7.jpeg' alt='Subsequent Visit' objectFit='cover' boxSize={['100%', 350]} />
+									<Heading as='h4' size='md' mt={2}>Subsequent Visit</Heading>
+									<Text fontSize='lg' mt={2} mb={[4, 4]}>Continue recovery with follow-up sessions focused on refining your treatment and maximizing your results.</Text>
+								</Flex>
+							</SimpleGrid>
+						</Box>
+						<Box>
+							<Heading mb={2}>Chiropractic</Heading>
+							<SimpleGrid columns={[1, 1, 3]} spacing={4}>
+								<Flex direction='column' justifyContent='space-between' ml={3} mr={3}>
+									<Image src='/images/img9.jpeg' alt='Initial Assessment & Treatment' objectFit='cover' boxSize={['100%', 350]} />
+									<Heading as='h4' size='md' mt={2}>Initial Assessment & Treatment</Heading>
+									<Text fontSize='lg' mt={2} mb={[4, 4]}>A comprehensive evaluation and personalized treatment plan tailored to your specific needs.</Text>
+								</Flex>
+								<Flex direction='column' justify='space-between' ml={3} mr={3}>
+									<Image src='/images/img11.jpeg' alt='Reassessment Assessment & Treatment' objectFit='cover' boxSize={['100%', 350]} />
+									<Heading as='h4' size='md' mt={2}>Chiropractic Subsequent Visit</Heading>
+									<Text fontSize='lg' mt={2} mb={[4, 4]}>Alignment and wellness with follow-up sessions focused on progress tracking and targeted adjustments.</Text>
+								</Flex>
+								<Flex direction='column' justify='space-between' ml={3} mr={3}>
+									<Image src='/images/img10.jpeg' alt='Subsequent Visit' objectFit='cover' boxSize={['100%', 350]} />
+									<Heading as='h4' size='md' mt={2}>Adjustment Visit</Heading>
+									<Text fontSize='lg' mt={2} mb={[4, 4]}>Gentle and effective realignment of your spine, designed to alleviate discomfort and enhance overall well-being.</Text>
+								</Flex>
+							</SimpleGrid>
+						</Box>
 					</Flex>
 				</Box>
 
 				{/* Testimonials */}
-				<Box as='section' pt={16} pb={16}>
+				<Box as='section' pt={16} pb={12}>
 					<Flex direction='column' gap={7} ml={['2em', '2em', '4em']} mr={['2em', '2em', '4em']}>
 						<Heading as="h1" size="2xl">Real Results, Real Stories</Heading>
 						<Text fontSize='xl'>Discover the transformative experiences of our clients firsthand through heartfelt testimonials. Hear how our services have positively impacted their lives, inspiring hope and confidence in your own journey towards wellness.</Text>
