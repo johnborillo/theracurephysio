@@ -30,7 +30,7 @@ function Navbar (){
 								<Text _hover={{color: '#808080'}}>{link.name}</Text>
 							</Link>
 						))}
-						<Link href='https://theracurephysio.janeapp.com/' style={{textDecoration: 'none'}}>
+						<Link href='https://theracurephysio.janeapp.com/' style={{textDecoration: 'none'}} isExternal>
 							<Button bgColor='#333333' color='white' _hover={{bg: '#808080'}}>Book now</Button>
 						</Link>
 					</Flex>
@@ -48,7 +48,7 @@ function Navbar (){
 						<Text color='' _hover={{color: '#808080'}}>{link.name}</Text>
 					</Link>
 				))}
-				<Link href='https://theracurephysio.janeapp.com/' style={{textDecoration: 'none'}}>
+				<Link href='https://theracurephysio.janeapp.com/' style={{textDecoration: 'none'}} isExternal>
 					<Button bgColor='#333333' color='white' _hover={{bg: '#808080'}}>Book now</Button>
 				</Link>
 			</Flex>

@@ -11,21 +11,21 @@ const content = [
 		items: [{
 			key: 0,
 			title: 'Initial Assessment & Treatment',
-			body: 'Begin your journey with a thorough evaluation and personalized treatment plan tailored to your needs.',
+			body: 'Thorough evaluation and personalized treatment plan tailored to your needs.',
 			image: '/images/img3.jpeg',
 			alt: 'Initial Assessment & Treatment'
 		},
 		{
 			key: 1,
 			title: 'Reassessment & Treatment',
-			body: 'Stay on track with ongoing evaluations and targeted therapies to optimize your progress.',
+			body: 'Ongoing evaluations and targeted therapies to optimize your progress.',
 			image: '/images/img13.jpeg',
 			alt: 'Reassessment Assessment & Treatment'
 		},
 		{
 			key: 2,
 			title: 'Subsequent Visit',
-			body: 'Continue recovery with follow-up sessions focused on refining your treatment and maximizing your results.',
+			body: 'Follow-up sessions focused on refining your treatment and maximizing your results.',
 			image: '/images/img7.jpeg',
 			alt: 'Subsequent Visit'
 		}]
@@ -34,7 +34,7 @@ const content = [
 		items: [{
 			key: 0,
 			title: 'Initial Assessment & Treatment',
-			body: 'A comprehensive evaluation and personalized treatment plan tailored to your specific needs.',
+			body: 'Comprehensive evaluation and personalized treatment plan tailored to your specific needs.',
 			image: '/images/img22.jpeg',
 			alt: 'Initial Assessment & Treatment'
 		},
@@ -48,7 +48,7 @@ const content = [
 		{
 			key: 2,
 			title: 'Adjustment Visit',
-			body: 'Gentle and effective realignment of your spine, designed to alleviate discomfort and enhance overall well-being.',
+			body: 'Gentle and effective realignment of the spine, designed to alleviate discomfort and enhance overall well-being.',
 			image: '/images/img10.jpeg',
 			alt: 'Adjustment Visit'
 		}]
@@ -60,13 +60,18 @@ function HomePage () {
 	return (
 		<>
 			{/* Landing Page */}
-			<Flex alignItems='center' bgImage="url('/images/img21.jpg')" bgSize='cover' bgPos='center' maxW='100%' h={700} pt={8} pb={8}>
+			<Flex alignItems='center' bgImage="url('/images/img23.jpeg')" bgSize='cover' bgPos='center' maxW='100%' h={700} pt={8} pb={8}>
 				<Flex direction='column' gap={7} ml={['2em', '2em', '4em']} mr={['2em', '2em', '4em']}>
 					<Heading as="h1" size="3xl" color='white'>Unlock Your Potential, Embrace Your Progress</Heading>
 					<Text fontSize='2xl' color='white'>Expert physiotherapy to help you overcome pain and enhance physical wellness</Text>
-					<Link href='https://theracurephysio.janeapp.com/' style={{textDecoration: 'none'}} isExternal>
-						<Button size='lg' bgColor='#F6F2EE' _hover={{backgroundColor: '#E6DBD0'}}>Get started</Button>
-					</Link>
+					<Flex direction='row' gap={4}>
+						<Link href='https://theracurephysio.janeapp.com/' style={{textDecoration: 'none'}} isExternal>
+							<Button size='lg' bgColor='#F6F2EE' _hover={{backgroundColor: '#E6DBD0'}}>Get started</Button>
+						</Link>
+						<Link href='/services' style={{textDecoration: 'none'}}>
+							<Button size='lg' variant='ghost' color='white' _hover={{textColor: 'black', backgroundColor: '#E6DBD0'}}>Learn more</Button>
+						</Link>
+					</Flex>
 				</Flex>
 			</Flex>
 
@@ -76,8 +81,8 @@ function HomePage () {
 					<Heading as="h1" size="2xl" >Explore Our Offerings</Heading>
 					<Text fontSize='xl'>Discover tailored solutions for your needs. From rehabilitation to performance enhancement, our services are designed to empower you.</Text>
 					{content.map((section) => (
-						<Box key={section.heading}>
-							<Heading mb={3}>{section.heading}</Heading>
+						<Box key={section.title}>
+							<Heading mb={3}>{section.title}</Heading>
 							<SimpleGrid columns={[1, 1, 3]} spacing={4}>
 								{section.items.map((item) => (
 									<Flex key={item.key} direction='column' justifyContent='space-between' ml={3} mr={3}>
