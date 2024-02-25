@@ -5,10 +5,11 @@ import Footer from './layout/Footer'
 import Services from './pages/Services'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App () {	
 	return (
-		<>
+		<>	
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
@@ -17,6 +18,7 @@ function App () {
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
 			<Footer />
+			<SpeedInsights />
 		</>
 	)
 }
