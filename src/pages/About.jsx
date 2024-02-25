@@ -7,21 +7,21 @@ const content = [
         image: '/images/azriel_pfp.png',
         alt: 'Azriel Diacamos',
         title: 'Physiotherapist',
-        bio: 'Azriel Diacamos is a registered physiotherapist with a passion for helping others. He has a strong background in sports medicine and orthopedic physiotherapy, with a focus on manual therapy and exercise prescription. Azriel is dedicated to providing personalized care and empowering his clients to achieve their health and wellness goals.',
+        bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet sem vitae diam luctus porttitor congue eu urna. Vivamus sagittis imperdiet justo ut molestie. Suspendisse dapibus blandit ullamcorper. Curabitur ac velit leo. Praesent nibh velit, lobortis in cursus nec, congue scelerisque neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis id tristique dui.`,
     },
     {
         name: 'Franilyn (Ani) Lapuz',
         image: '/images/franilyn_pfp.jpeg',
         alt: 'Franilyn (Ani) Lapuz',
         title: 'Physiotherapist',
-        bio: 'Jenny Lee is a registered physiotherapist with a special interest in women’s health and pelvic floor physiotherapy. She is committed to providing compassionate care and evidence-based treatments to help her clients achieve optimal health and well-being. Jenny is passionate about empowering her clients to take an active role in their recovery and overall wellness.',
+        bio: 'Nullam finibus turpis ut dolor consectetur, et consequat augue laoreet. Suspendisse sit amet lectus porta, finibus nibh at, mollis justo. Aliquam pretium, est in eleifend tincidunt, turpis mauris euismod nulla, sit amet rhoncus nunc mi non quam. Fusce eu faucibus diam, in posuere justo. Maecenas vitae ipsum eros. Nullam iaculis ex quis felis auctor, et faucibus justo dignissim. Nam fringilla.',
     },
     {
         name: 'Dr. Charles Goldman',
         image: '/images/profile_placeholder.jpeg',
         alt: 'Dr. Charles Goldman',
         title: 'Chiropractor',
-        bio: 'Dr. John Doe is a licensed chiropractor with a focus on musculoskeletal health and wellness. He is dedicated to providing personalized care and evidence-based treatments to help his clients achieve optimal health and well-being. Dr. Doe is passionate about empowering his clients to take an active role in their recovery and overall wellness.',
+        bio: 'Nunc vel iaculis nisl. Nulla aliquam lobortis libero at pellentesque. Praesent porttitor, ligula sed elementum bibendum, felis enim ornare odio, at viverra leo nisi vel est. Etiam eget mauris nulla. In quis urna non quam iaculis porttitor. In tincidunt vitae nibh vehicula efficitur. Suspendisse lectus enim, semper at semper quis, vestibulum a nunc. Ut nec quam id lorem feugiat suscipit.',
     }
 ]
 
